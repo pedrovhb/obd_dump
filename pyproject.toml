@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "obd-experiment"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Batista <pedrovhb@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+obd = "^0.7.1"
+quickdump = "^0.4.0"
+structlog = "^21.5.0"
+dash = "^2.3.0"
+rich = "^12.0.1"
+pyudev = "^0.23.2"
+loguru = "^0.6.0"
+BeneDict = "^0.3.2"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+runobd = "main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
